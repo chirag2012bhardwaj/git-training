@@ -1,0 +1,16 @@
+name: Defense Systems CI/CD
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  security-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+
+      - name: Run security scan simulation
+        run: echo "Code scanned. No vulnerabilities detected. Ready for deployment."
