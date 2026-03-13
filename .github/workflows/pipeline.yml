@@ -16,6 +16,6 @@ jobs:
         env:
           MY_SECRET_TOKEN: ${{ secrets.dEFENSE_DEPLY_TOKEN }}
         run: |
-          echo "Authrnticating deployment..."
+          echo "Authenticating deployment..."
           echo "Using token: $MY_SECRET_TOKEN"
           echo "Deployment successful."
